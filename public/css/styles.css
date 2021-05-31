@@ -1,0 +1,7 @@
+form{
+    z-index:10;
+}
+
+#rollerContainer{
+    visibility:hidden;
+}
