@@ -54,6 +54,7 @@ app.post('/', function (req, res) {
   dcv = parseInt(req.body.dcv);
   acv = parseInt(req.body.acv);
   rollDice();
+
   res.render('dice', {
     dieOneNumber: dieOneNumber,
     dieTwoNumber: dieTwoNumber,
