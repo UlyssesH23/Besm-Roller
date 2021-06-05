@@ -93,7 +93,9 @@ app.post('/mindRoll', function (req, res) {
     characterName: characterName
   });
   console.log(diceTotal);
+  
 });
+
 
 app.post('/bodyRoll', function (req, res) {
   rollDice();
