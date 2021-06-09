@@ -71,9 +71,9 @@ app.post('/', function(req, res) {
         characterName: characterName
     });
 });
-app.post('/editStats', function(req, res) {
-    res.sendFile(__dirname + "/info.html")
-});
+// app.post('/editStats', function(req, res) {
+//     res.sendFile(__dirname + "/info.html")
+// });
 
 app.post('/regRoll', function(req, res) {
     rollDice();
