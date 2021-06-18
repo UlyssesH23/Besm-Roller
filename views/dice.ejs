@@ -5,69 +5,71 @@
     <meta charset="utf-8">
     <title>
         <%=characterName%> Roller</title>
-    <link rel="stylesheet" href="/css/info.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/info.css">
+
+
 </head>
 
 <body>
-    <div id="rollerContainer">
-        <div class="container">
-            <h1 class="text-center">Besm Roller</h1>
+    <div id="rollerContainer ">
+        <div class="container ">
+            <h1 class="text-center ">Besm Roller</h1>
         </div>
-        <div class="container mt-4">
-            <div class="row">
-                <div class="col">
-                    <h4 class="text-center">Die 1</h4>
+        <div class="container mt-4 ">
+            <div class="row ">
+                <div class="col ">
+                    <h4 class="text-center ">Die 1</h4>
 
-                    <div class="img1 container mt-5"></div>
+                    <div class="img1 container mt-5 "></div>
                     <img class='rounded mx-auto d-block' id='die1' src='/images/dice<%=dieOneNumber%>.png'>
                 </div>
-                <div class="col">
-                    <h4 class="text-center">Die 2</h4>
+                <div class="col ">
+                    <h4 class="text-center ">Die 2</h4>
 
-                    <div class="img2 container mt-5"></div>
+                    <div class="img2 container mt-5 "></div>
                     <img class='rounded mx-auto d-block' id='die1' src='/images/dice<%=dieTwoNumber%>.png'>
                 </div>
-                <div class="info-form">
+                <div class="info-form ">
 
                 </div>
             </div>
-            <div class="container mt-5">
-                <h1 class="text-center my-4">Character:
+            <div class="container mt-5 ">
+                <h1 class="text-center my-4 ">Character:
                     <%=characterName%>
                 </h1>
                 <div class="row ">
-                    <div class="col">
-                        <form action="/mindRoll" method="post">
-                            <button type="submit" id="mind-roll-button" class="btn btn-info">Mind Roll</button>
+                    <div class="col ">
+                        <form action="/mindRoll " method="post">
+                            <button type="submit " id="mind-roll-button " class="btn btn-info ">Mind Roll</button>
                         </form>
                     </div>
-                    <div class="col">
-                        <form action="/bodyRoll" method="post">
-                            <button type="submit" id="body-roll-button" class="btn btn-info"> Body Roll</button>
+                    <div class="col ">
+                        <form action="/bodyRoll " method="post">
+                            <button type="submit " id="body-roll-button " class="btn btn-info "> Body Roll</button>
                         </form>
                     </div>
-                    <div class="col">
-                        <form action="/regRoll" method="post">
-                            <button type="submit" id="reg-roll-button" class="btn  btn-info">Roll</button>
+                    <div class="col ">
+                        <form action="/regRoll " method="post">
+                            <button type="submit " id="reg-roll-button " class="btn btn-info ">Roll</button>
                         </form>
                     </div>
-                    <div class="col">
-                        <form action="/acvRoll" method="post">
-                            <button type="submit" id="acv-roll-button" class="btn btn-info">ACV Roll</button>
+                    <div class="col ">
+                        <form action="/acvRoll " method="post">
+                            <button type="submit " id="acv-roll-button " class="btn btn-info ">ACV Roll</button>
                         </form>
                     </div>
 
-                    <div class="col">
-                        <form action="/dcvRoll" method="post">
-                            <button type="submit" id="dcv-roll-button" class="btn btn-info"> DCV Roll</button>
+                    <div class="col ">
+                        <form action="/dcvRoll " method="post">
+                            <button type="submit " id="dcv-roll-button " class="btn btn-info "> DCV Roll</button>
                         </form>
                     </div>
 
                 </div>
             </div>
-            <div class="container" id="output">
+            <div class="container " id="output ">
 
                 <h1 class='text-center'>
                     <%=typeOfRoll%>:
@@ -76,18 +78,17 @@
             </div>
         </div>
         <div>
-            <form action="editStats" method="post">
-                <button class=" btn btn-warning" type="submit">Change Stats</button>
-            </form>
+
+            <button id="edit-stat-buttons " class="btn btn-warning " type="submit ">Change Stats</button>
+
         </div>
 </body>
 
 <footer>
 
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
-</script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 " crossorigin="anonymous "></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js " integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin=" anonymous "></script>
 
 
 </html>

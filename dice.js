@@ -79,7 +79,7 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname + "/info.html")
 });
 
-app.post('/', function(req, res) {
+app.post("/data", function(req, res) {
     MYAPP.character.name = req.body.cName;
     MYAPP.character.mindStat = parseInt(req.body.mStat);
     MYAPP.character.bodyStat = parseInt(req.body.bStat);
